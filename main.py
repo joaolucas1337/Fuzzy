@@ -29,7 +29,7 @@ class Main():
         per_avg = fuzz.trimf(per, [0, 0, 50])
         per_high = fuzz.trimf(per, [0, 50, 100])
 
-        fig, (ax0, ax1, ax2) = plt.subplots(nrows=3, figsize=(8, 9))
+        fig, (ax0, ax1, ax2) = plt.subplots(nrows=3)
 
         ax0.plot(temp, temp_low, 'b', linewidth=1.5, label='Cold')
         ax0.plot(temp, temp_avg, 'g', linewidth=1.5, label='Reasonable')
@@ -49,7 +49,7 @@ class Main():
         ax2.set_title('Performance')
         ax2.legend()
 
-
+        plt.subplots_adjust(bottom=0.1, top=0.9, wspace=0.4, hspace=0.4)
         plt.show()
 
 if __name__ == '__main__':
