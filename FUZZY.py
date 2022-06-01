@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from asyncore import loop
 import numpy as np
 import skfuzzy as fuzz
